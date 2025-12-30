@@ -138,13 +138,25 @@ fun EditorScreen(
                     Tab(
                         selected = selectedTab == 2,
                         onClick = { selectedTab = 2 },
-                        text = { Text("Terminal") },
-                        icon = { Icon(Icons.Default.Terminal, null) },
-                        badge = {
-                            if (buildStatus is BuildStatus.Running || buildStatus is BuildStatus.Building) {
-                                Badge { Text("●") }
+                        text = { 
+                            Row(
+                                horizontalArrangement = Arrangement.spacedBy(4.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text("Terminal")
+                                if (buildStatus is BuildStatus.Running || buildStatus is BuildStatus.Building) {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(8.dp)
+                                            .background(
+                                                MaterialTheme.colorScheme.primary,
+                                                shape = MaterialTheme.shapes.small
+                                            )
+                                    )
+                                }
                             }
-                        }
+                        },
+                        icon = { Icon(Icons.Default.Terminal, null) }
                     )
                 }
                 
