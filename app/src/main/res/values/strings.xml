@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">React IDE</string>
+    <string name="create_project">Criar Projeto</string>
+    <string name="import_project">Importar Projeto</string>
+    <string name="project_name">Nome do Projeto</string>
+    <string name="project_created">Projeto criado com sucesso</string>
+    <string name="build">Build</string>
+    <string name="run">Executar</string>
+    <string name="stop">Parar</string>
+    <string name="editor">Editor</string>
+    <string name="preview">Preview</string>
+    <string name="terminal">Terminal</string>
+    <string name="files">Arquivos</string>
+    <string name="settings">Configurações</string>
+</resources>
