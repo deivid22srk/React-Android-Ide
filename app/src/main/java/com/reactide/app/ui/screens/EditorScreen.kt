@@ -451,7 +451,7 @@ fun FileTreeItem(
                     node.name.endsWith(".tsx") || node.name.endsWith(".ts") -> Icons.Default.Code
                     node.name.endsWith(".json") -> Icons.Default.DataObject
                     node.name.endsWith(".css") -> Icons.Default.Palette
-                    node.name.endsWith(".html") -> Icons.Default.Html
+                    node.name.endsWith(".html") -> Icons.Default.Language
                     else -> Icons.Default.InsertDriveFile
                 },
                 contentDescription = null,
@@ -721,7 +721,7 @@ fun ActionMenuDialog(
                     onClick = onExportLogs,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Icon(Icons.Default.FileDownload, null)
+                    Icon(Icons.Default.Download, null)
                     Spacer(Modifier.width(8.dp))
                     Text("Exportar logs")
                 }
@@ -729,7 +729,7 @@ fun ActionMenuDialog(
                     onClick = onClearBuild,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Icon(Icons.Default.CleaningServices, null)
+                    Icon(Icons.Default.Delete, null)
                     Spacer(Modifier.width(8.dp))
                     Text("Limpar build")
                 }
